@@ -48,4 +48,3 @@ addFruit("apple");
 /*  Output [ { name: 'apple', count: 1 } ]
 [ { name: 'apple', count: 1 }, { name: 'kiwi', count: 1 } ]
 [ { name: 'apple', count: 2 }, { name: 'kiwi', count: 1 } ]*/
-addFruit.push({name:"banana" ,count:1});
