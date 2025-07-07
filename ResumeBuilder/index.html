@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ 
+  <div class="container">
+    <h2>Resume Builder</h2>
+    <form id="resumeForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="text" id="skills" placeholder="Your Skills" required>
+      <input type="text" id="education" placeholder="Education" required>
+      <input type="text" id="projects" placeholder="Projects" required>
+      <textarea id="experience" placeholder="Experience" required></textarea>
+      <textarea id="bio" placeholder="Short Bio" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+ 
+  <div class="container" id="resumeDisplay">
+    <h2>Your Resume</h2>
+    <div class="resume-section">
+      <p><strong>Name:</strong> <span id="resName"></span></p>
+      <p><strong>Skills:</strong> <span id="resSkills"></span></p>
+      <p><strong>Education:</strong> <span id="resEducation"></span></p>
+      <p><strong>Projects:</strong> <span id="resProjects"></span></p>
+      <p><strong>Experience:</strong> <span id="resExperience"></span></p>
+      <p><strong>Bio:</strong> <span id="resBio"></span></p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('resumeForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+     
+      document.getElementById('resName').textContent = document.getElementById('name').value;
+      document.getElementById('resSkills').textContent = document.getElementById('skills').value;
+      document.getElementById('resEducation').textContent = document.getElementById('education').value;
+      document.getElementById('resProjects').textContent = document.getElementById('projects').value;
+      document.getElementById('resExperience').textContent = document.getElementById('experience').value;
+      document.getElementById('resBio').textContent = document.getElementById('bio').value;
+
+      
+      document.getElementById('resumeDisplay').style.display = 'block';
+    });
+  </script>
+
+</body>
+</html>

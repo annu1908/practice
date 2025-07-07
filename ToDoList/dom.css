@@ -31,9 +31,24 @@ li{
     border:1px solid #ddd;
     display: flex;
 }
-li button{
-    background-color:#e74c3c;
-    font-size:14px;
-    padding:4px 8px;
-    border-radius: 3px;
+.task-text{
+    font-size: 16px;
+}
+.buttons{
+    display:flex;
+    gap:8px;
+}
+.tick-btn{
+    background-color: #d4edda;
+    border:1 px solid #28a745;
+    color:#28a745;
+    border-radius: 4px;
+
+}
+.delete-btn{
+    background-color: #f8d7da;
+    border:1 px solid #dc3545;
+    color:#dc3545;
+    border-radius: 4px;
+
 }
